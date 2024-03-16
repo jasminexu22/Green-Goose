@@ -15,10 +15,10 @@ function initMap() {
 
     const markers = [
         {
-            name: "Merci beacoup!",
+            name: "Thank you for responsibly disposing!",
             latitude: 43.4730130,
             longitude: -80.5395363,
-            content: "i loooove cats",
+            content: "Did you know that humans only use 1% of earth's water?",
             icon: {
                 url: 'images/trashcan.png',
                 scaledSize: new google.maps.Size(30, 30) // Adjust the size as needed
@@ -27,10 +27,10 @@ function initMap() {
         },
 
         {
-            name: "#2",
+            name: "Thank you for responsibly disposing!",
             latitude: 43.47312665774592,
             longitude: -80.5390576852732,
-            content: "i loooove dogs",
+            content: "Polar bears are very nice creatures",
             icon: {
                 url: 'images/trashcan.png',
                 scaledSize: new google.maps.Size(30, 30) // Adjust the size as needed
@@ -40,10 +40,10 @@ function initMap() {
         },
 
         {
-            name: "#3",
+            name: "Thank you for responsibly disposing!",
             latitude: 43.47483437092914,
             longitude: -80.54135692885755,
-            content: "i loooove dogs",
+            content: "Are you involved in any sustainable initiatives at UW?",
             icon: {
                 url: 'images/trashcan.png',
                 scaledSize: new google.maps.Size(30, 30) // Adjust the size as needed
@@ -54,10 +54,10 @@ function initMap() {
         //43.474198371489244, -80.54010161022063
 
         {
-            name: "#4",
+            name: "Thank you for responsibly disposing!",
             latitude: 43.474198371489244,
             longitude: -80.54010161022063,
-            content: "i loooove dogs",
+            content: "There are lots of organizations at UW (ie. greenhouse) you can participate in!",
             icon: {
                 url: 'images/trashcan.png',
                 scaledSize: new google.maps.Size(30, 30) // Adjust the size as needed
@@ -68,7 +68,7 @@ function initMap() {
         //43.47298339972288, -80.539591255965
 
         {
-            name: "#5",
+            name: "Thank you for responsibly disposing!",
             latitude: 43.47298339972288,
             longitude: -80.539591255965,
             content: "i loooove dogs",
@@ -82,10 +82,10 @@ function initMap() {
         // 43.472973000600355, -80.54015363018016
 
         {
-            name: "#6",
+            name: "Thank you for responsibly disposing!",
             latitude: 43.472973000600355,
             longitude: -80.54015363018016,
-            content: "i loooove dogs",
+            content: "Did you know trees can communicate with each other?",
             icon: {
                 url: 'images/trashcan.png',
                 scaledSize: new google.maps.Size(30, 30) // Adjust the size as needed
@@ -96,10 +96,10 @@ function initMap() {
         // 43.47269537267563, -80.53988161233684
 
         {
-            name: "#7",
+            name: "Thank you for responsibly disposing!",
             latitude: 43.47269537267563,
             longitude: -80.53988161233684,
-            content: "i loooove dogs",
+            content: "Penguins are very cute creatures.",
             icon: {
                 url: 'images/trashcan.png',
                 scaledSize: new google.maps.Size(30, 30) // Adjust the size as needed
@@ -110,10 +110,10 @@ function initMap() {
         // 43.473442387113245, -80.54130302537226
 
         {
-            name: "#8",
+            name: "Thank you for responsibly disposing!",
             latitude: 43.473442387113245,
             longitude: -80.54130302537226,
-            content: "i loooove dogs",
+            content: "Fungi play a very vital role in protecting the environment!",
             icon: {
                 url: 'images/trashcan.png',
                 scaledSize: new google.maps.Size(30, 30) // Adjust the size as needed
@@ -122,10 +122,10 @@ function initMap() {
         },
 
         {
-            name: "#9",
+            name: "Thank you for responsibly disposing!",
             latitude: 43.473442387113245,
             longitude: -80.54130302537226,
-            content: "i loooove dogs",
+            content: "Did you know bees dance to communicate?",
             icon: {
                 url: 'images/trashcan.png',
                 scaledSize: new google.maps.Size(30, 30) // Adjust the size as needed
@@ -136,10 +136,10 @@ function initMap() {
         /// 43.473123367922575, -80.54026769648893
 
         {
-            name: "#10",
+            name: "Thank you for responsibly disposing!",
             latitude: 43.473123367922575,
             longitude: -80.54130302537226,
-            content: "i loooove dogs",
+            content: "Did you know bees dance to communicate?",
             icon: {
                 url: 'images/trashcan.png',
                 scaledSize: new google.maps.Size(30, 30) // Adjust the size as needed
