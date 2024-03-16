@@ -1,110 +1,67 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Green Goose</title>
-    <link rel="stylesheet" href="style.css" />
-    <style>
-        /* CSS styles for the body to set background and full height */
-        body {
-            margin: 0;
-            padding: 0;
-            background-image: url('Images/dirt_background.png'); /* Background image */
-            background-size: auto 107%; /* Cover the height, but not the full width */
-            background-repeat: no-repeat; /* Prevent repeating the background image */
-            background-position: right; /* Start the background from the right side */
-            height: 100vh; /* Full height of the viewport */
-            display: flex;
-            flex-direction: column;
-        }
+/* CSS styles for the body to set background and full height */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #edfcf2;
+    color: #05386B;
+    font-family: 'Poppins', sans-serif;
+}
 
-        .main {
-            flex: 1; /* Take up remaining space in the flex container */
-            padding: 20px;
-        }
+h1 {
+    text-align: center;
+    padding: 2rem;
+    font-size: 50px;
+}
 
-        .image-container {
-            position: relative;
-            margin-top: 430px; /* Adjust top margin as needed */
-            margin-left: 40px; /* Adjust left margin as needed */
-        }
+#map {
+    height: 85vh;
+}
 
-        img {
-            width: 150px; /* Set the desired width */
-            height: auto; /* Maintain aspect ratio */
-            position: absolute; /* Position the image relative to its container */
-            top: 0; /* Align the image to the top of its container */
-            left: 0; /* Align the image to the left of its container */
-            padding: 130px;
-        }
+.popup {
+    color: black;
+}
 
-        .roseseeds {
-            left: 30; /* Align roseseeds.png to the left */
-        }
+/* the side navbar */
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #5CDB95;
+    overflow: hidden;
+    padding-top: 20px;
+}
 
-        .lilyseeds {
-            left: 220px; /* Align lilyseeds.png to the right of roseseeds.png */
-        }
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #05386B;
+    display: block;
+    font-weight: bold;
+}
 
-        .callaseeds {
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
 
-            left: 430px;
-        }
+.main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+}
 
-        .watercan {
-            
-            left: 650px;
-        }
-        
-        .inv {
+/* Move the "Garden" title higher */
+.main h1 {
+    margin-top: 5px; /* Adjust the margin as needed */
+    color: white; /* Set font color to white */
+}
 
-            left: 940px;
-        }
+.watercan {
+    left: 580px; /* Adjust the horizontal position as needed */
+    width: 200px; /* Set the desired width for the watering can */
+    height: auto; /* Maintain aspect ratio */
+}
 
-        .sidenav {
-            background-color: #5CDB95; /* Background color for the side navigation */
-            padding: 20px;
-            width: 200px;
-            margin-top: auto; /* Push the side nav to the bottom */
-        }
-
-        .sidenav a {
-            display: block;
-            padding: 6px 8px 6px 16px;
-            text-decoration: none;
-            font-size: 25px;
-            color: #05386B;
-            font-weight: bold;
-        }
-
-        .sidenav a:hover {
-            color: #f1f1f1;
-        }
-    </style>
-</head>
-<body>
-    <div class="main">
-        <h1>Garden</h1>
-        <div class="image-container">
-            <!-- Add the image here -->
-            <img src="Images/roseseeds.png" alt="Roseseeds" class="roseseeds" />
-            <img src="Images/lilyseeds.png" alt="Lilyseeds" class="lilyseeds" />
-            <img src="Images/callaseeds.png" alt="Callaseeds" class="callaseeds" />
-            <img src="Images/watering_can.png" alt="WateringCan" class="watercan" />
-            <img src="Images/inventory.png" alt="Inv" class="inv" />
-        </div>
-        <div id="map"></div>
-    </div>
-
-    <div class="sidenav">
-        <a href="index.html">Map</a>
-        <a href="#">Garden</a>
-        <a href="#">Leaderboard</a>
-        <a href="#">Statistics</a>
-    </div>
-
-    <!-- change the font later -->
-
-</body>
-</html>
