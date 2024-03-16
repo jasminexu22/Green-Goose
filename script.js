@@ -5,26 +5,51 @@ function initMap() {
         mapId: '26da08bbc3d6e826'
     });
 
-    const marker = new google.maps.Marker({
-        position: { lat: 43.473039290458125, lng: -80.53976273955261 },
-        map: map,
-        title: "Trash Can",
-        animation: google.maps.Animation.DROP
-    });
 
-    const contentString = `
-        <div>
-            <h3>Trash Can</h3>
-            <p>Information about the trash can...</p>
-        </div>
-    `;
-// 
-    const infowindow = new google.maps.InfoWindow({
-        content: contentString
-    });
+    // Array of markers 
+    // name
+    // latitude, longitude
+    // image url
+    // 
 
-    // event listener 
-    marker.addListener('click', () => {
-        infowindow.open(map, marker);
-    });
+    
+
+    // The markers 
+
+    const markers = [
+        "Trash Can 1",
+        43.473039290458125,
+        -80.53976273955261,
+    ]
+
+    for(let i = 0;i<markers.length; i++){
+        const currMarker = markers[i];
+
+        const marker = new google.maps.Marker({
+            title: currMarker[0],
+            position: { lat: currMarker[1], lng: currMarker[2] },
+            map: map,
+            animation: google.maps.Animation.DROP
+        });
+    
+        const contentString = `
+            <div class="popup">
+                <h3>Trash Can</h3>
+                <p>stuffffffffff</p>
+            </div>
+        `;
+    // 
+        const infowindow = new google.maps.InfoWindow({
+            content: contentString
+        });
+    
+        // event listener 
+        marker.addListener('click', () => {
+            infowindow.open(map, marker);
+        });
+
+    }
+
+
+    
 }
