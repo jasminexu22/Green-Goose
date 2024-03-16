@@ -1,22 +1,24 @@
-// Firebase authentication
-const auth = firebase.auth();
-
-const signUpForm = document.getElementById('signup-form');
+const signInForm = document.getElementById('signin-form');
 const messageElement = document.getElementById('message');
 
-signUpForm.addEventListener('submit', (e) => {
+signInForm.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    const email = signUpForm['email'].value;
-    const password = signUpForm['password'].value;
+    const email = signInForm['email'].value;
+    const password = signInForm['password'].value;
 
-    auth.createUserWithEmailAndPassword(email, password)
-        .then((userCredential) => {
-            const user = userCredential.user;
-            messageElement.textContent = `Account created successfully for ${user.email}`;
-            signUpForm.reset();
-        })
-        .catch((error) => {
-            messageElement.textContent = error.message;
-        });
+    // Hardcoded username and password for authentication
+    const hardcodedUsername = "vivian.yuan.ca@gmail.com";
+    const hardcodedPassword = "test";
+
+    if (email === hardcodedUsername && password === hardcodedPassword) {
+        messageElement.textContent = "Sign in successful!";
+        // Redirect to index.html
+        window.location.href = "index.html";
+    } else {
+        messageElement.textContent = "Incorrect username or password!";
+    }
+
+    // Reset the form
+    signInForm.reset();
 });
