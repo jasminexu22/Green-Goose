@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green Goose</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        /* CSS styles for the body to set background and full height */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #C3D7C2; /* Set a background color if needed */
+            color: #05386B;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .main {
+            background-image: url('Images/stats.jpeg'); /* Background image */
+            background-size: auto 100%; /* Image will be contained within the container */
+            background-repeat: no-repeat; /* Prevent repeating the background image */
+            background-position: center; /* Center the background image */
+            height: 100vh; /* Full height of the viewport */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center content vertically */
+            align-items: center; /* Center content horizontally */
+        }
+
+        h1 {
+            font-size: 50px;
+        }
+
+        .sidenav {
+            background-color: #5CDB95; /* Background color for the side navigation */
+            padding: 20px;
+            width: 200px;
+            margin-top: auto; /* Push the side nav to the bottom */
+        }
+
+        .sidenav a {
+            display: block;
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #05386B;
+            font-weight: bold;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+    </div>
+
+    <div class="sidenav">
+        <a href="index.html">Map</a>
+        <a href="garden.html">Garden</a>
+        <a href="#">Leaderboard</a>
+        <a href="#">Statistics</a>
+    </div>
+
+    <!-- change the font later -->
+
+    <script src="script.js"></script>
+</body>
+</html>
