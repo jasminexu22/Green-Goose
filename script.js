@@ -1,3 +1,5 @@
+let points = 0;
+
 function initMap() {
     const map = new google.maps.Map(document.getElementById('map'), {
         center: { lat: 43.47283057937074, lng: -80.54033956546421 },
@@ -105,15 +107,6 @@ function initMap() {
             /// icon: xxx url
         },
         
-
-
-
-
-
-
-
-
-
         // add more as needed (just copy paste, change data)
     ];
 
@@ -143,9 +136,20 @@ function initMap() {
         // the event listener 
         marker.addListener('click', () => {
             infowindow.open(map, marker);
+            points++;
+            console.log("Points:", points);
+            console.log("<p> points:" + points.toString() + "</p>");
+            // document.getElementById("points").innerHTML = "<button >hi</button>"
+            document.getElementById("points").textContent = "Points: " + points.toString();
         });
     });
+
+
+    /// checking the user locatio
+
+
 }
+
 
 
 
