@@ -1,3 +1,4 @@
+
 html {
     box-sizing: border-box;
     font-size: 100%
@@ -11,18 +12,51 @@ body{
     margin: 0;
     padding: 0;
     background-color: #edfcf2;
-    color: green;
+    color: #05386B;
+    font-family: 'Poppins', sans-serif;
 }
 
 h1{
     text-align: center;
-    padding: 0 3rem;
+    padding: 2rem;
+    font-size: 50px;
+
 }
+
 #map{
-    height: 100vh;
+    height: 85vh;
 
 }
 
 .popup{
     color: black;
 }
+
+.sidenav{
+    height:100%;
+    width: 180px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #5CDB95;
+    overflow: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #05386B;
+    display: block;
+  }
+
+  /* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  .main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
