@@ -11,6 +11,8 @@ signInForm.addEventListener('submit', (e) => {
     const hardcodedUsername = "vivian.yuan.ca@gmail.com";
     const hardcodedPassword = "test";
 
+    const hannieUsername = "RedDolphin5732@gmail.com";
+    const hanniePassword = "123456!";
     if (email === hardcodedUsername && password === hardcodedPassword) {
         messageElement.textContent = "Sign in successful!";
         // Redirect to index.html
