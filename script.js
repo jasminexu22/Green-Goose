@@ -18,7 +18,11 @@ function initMap() {
             name: "Merci beacoup!",
             latitude: 43.4730130,
             longitude: -80.5395363,
-            content: "i loooove cats"
+            content: "i loooove cats",
+            icon: {
+                url: 'images/trashcan.png',
+                scaledSize: new google.maps.Size(30, 30) // Adjust the size as needed
+            }
             // icon: xxx url
         },
 
@@ -26,7 +30,11 @@ function initMap() {
             name: "#2",
             latitude: 43.47312665774592,
             longitude: -80.5390576852732,
-            content: "i loooove dogs"
+            content: "i loooove dogs",
+            icon: {
+                url: 'images/trashcan.png',
+                scaledSize: new google.maps.Size(30, 30) // Adjust the size as needed
+            }
             /// icon: xxx url
             // 43.47312665774592, -80.5390576852732
         },
@@ -35,7 +43,11 @@ function initMap() {
             name: "#3",
             latitude: 43.47483437092914,
             longitude: -80.54135692885755,
-            content: "i loooove dogs"
+            content: "i loooove dogs",
+            icon: {
+                url: 'images/trashcan.png',
+                scaledSize: new google.maps.Size(30, 30) // Adjust the size as needed
+            }
             /// icon: xxx url
         },
 
@@ -45,7 +57,11 @@ function initMap() {
             name: "#4",
             latitude: 43.474198371489244,
             longitude: -80.54010161022063,
-            content: "i loooove dogs"
+            content: "i loooove dogs",
+            icon: {
+                url: 'images/trashcan.png',
+                scaledSize: new google.maps.Size(30, 30) // Adjust the size as needed
+            }
             /// icon: xxx url
         },
 
@@ -55,7 +71,11 @@ function initMap() {
             name: "#5",
             latitude: 43.47298339972288,
             longitude: -80.539591255965,
-            content: "i loooove dogs"
+            content: "i loooove dogs",
+            icon: {
+                url: 'images/trashcan.png',
+                scaledSize: new google.maps.Size(30, 30) // Adjust the size as needed
+            }
             /// icon: xxx url
         },
 
@@ -65,7 +85,11 @@ function initMap() {
             name: "#6",
             latitude: 43.472973000600355,
             longitude: -80.54015363018016,
-            content: "i loooove dogs"
+            content: "i loooove dogs",
+            icon: {
+                url: 'images/trashcan.png',
+                scaledSize: new google.maps.Size(30, 30) // Adjust the size as needed
+            }
             /// icon: xxx url
         },
 
@@ -75,7 +99,11 @@ function initMap() {
             name: "#7",
             latitude: 43.47269537267563,
             longitude: -80.53988161233684,
-            content: "i loooove dogs"
+            content: "i loooove dogs",
+            icon: {
+                url: 'images/trashcan.png',
+                scaledSize: new google.maps.Size(30, 30) // Adjust the size as needed
+            }
             /// icon: xxx url
         },
 
@@ -85,7 +113,11 @@ function initMap() {
             name: "#8",
             latitude: 43.473442387113245,
             longitude: -80.54130302537226,
-            content: "i loooove dogs"
+            content: "i loooove dogs",
+            icon: {
+                url: 'images/trashcan.png',
+                scaledSize: new google.maps.Size(30, 30) // Adjust the size as needed
+            }
             /// icon: xxx url
         },
 
@@ -93,7 +125,11 @@ function initMap() {
             name: "#9",
             latitude: 43.473442387113245,
             longitude: -80.54130302537226,
-            content: "i loooove dogs"
+            content: "i loooove dogs",
+            icon: {
+                url: 'images/trashcan.png',
+                scaledSize: new google.maps.Size(30, 30) // Adjust the size as needed
+            }
             /// icon: xxx url
         },
 
@@ -103,7 +139,11 @@ function initMap() {
             name: "#10",
             latitude: 43.473123367922575,
             longitude: -80.54130302537226,
-            content: "i loooove dogs"
+            content: "i loooove dogs",
+            icon: {
+                url: 'images/trashcan.png',
+                scaledSize: new google.maps.Size(30, 30) // Adjust the size as needed
+            }
             /// icon: xxx url
         },
         
@@ -117,7 +157,11 @@ function initMap() {
             position: { lat: markerInfo.latitude, lng: markerInfo.longitude },
             // icon: markerIcon.image
             map: map,
-            animation: google.maps.Animation.DROP
+            animation: google.maps.Animation.DROP,
+            icon: {
+                url: markerInfo.icon.url,
+                scaledSize: new google.maps.Size(50,50) // Adjust the size as needed
+            }
         });
 
         // marker popup content
