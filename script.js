@@ -147,15 +147,15 @@ function initMap() {
             /// icon: xxx url
         },
 
-        /// your current location
         {
             name: "This is your current location",
-            latitude: 43.47302828948078,
-            longitude: -80.5397384257727,
-            content: ":D",
+            latitude: 43.473111248826584,
+            longitude: -80.53979617336208,
+            //43.473111248826584, -80.53979617336208
+            content: "Did you know bees dance to communicate?",
             icon: {
                 url: 'images/greenmarker.png',
-                scaledSize: new google.maps.Size(50, 50) // Adjust the size as needed
+                scaledSize: new google.maps.Size(40, 40) // Adjust the size as needed
             }
             /// icon: xxx url
         },
