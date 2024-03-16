@@ -146,6 +146,19 @@ function initMap() {
             }
             /// icon: xxx url
         },
+
+        /// your current location
+        {
+            name: "This is your current location",
+            latitude: 43.47302828948078,
+            longitude: -80.5397384257727,
+            content: ":D",
+            icon: {
+                url: 'images/greenmarker.png',
+                scaledSize: new google.maps.Size(50, 50) // Adjust the size as needed
+            }
+            /// icon: xxx url
+        },
         
         // add more as needed (just copy paste, change data)
     ];
