@@ -13,17 +13,19 @@ function initMap() {
 
     const markers = [
         {
-            name: "Trash Can 1",
+            name: "random trash can #1",
             latitude: 43.473039290458125,
             longitude: -80.53976273955261,
-            content: "Stuff for Trash Can 1"
+            content: "i loooove cats"
+            // icon: xxx url
         },
 
         {
-            name: "Trash Can 2",
+            name: "random can #2",
             latitude: 43.473267817842036,
             longitude: -80.54115614006751,
-            content: "Stuff for Trash Can 2"
+            content: "i loooove dogs"
+            /// icon: xxx url
         },
 
         // add more as needed (just copy paste, change data)
@@ -34,6 +36,7 @@ function initMap() {
         const marker = new google.maps.Marker({
             title: markerInfo.name,
             position: { lat: markerInfo.latitude, lng: markerInfo.longitude },
+            // icon: markerIcon.image
             map: map,
             animation: google.maps.Animation.DROP
         });
