@@ -1,14 +1,5 @@
-
-html {
-    box-sizing: border-box;
-    font-size: 100%
-}
-
-*,*::before, *::after{
-    box-sizing: inherit;
-}
-
-body{
+/* CSS styles for the body to set background and full height */
+body {
     margin: 0;
     padding: 0;
     background-color: #edfcf2;
@@ -16,26 +7,23 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-h1{
+h1 {
     text-align: center;
     padding: 2rem;
     font-size: 50px;
-
 }
 
-#map{
+#map {
     height: 85vh;
-
 }
 
-.popup{
+.popup {
     color: black;
 }
 
 /* the side navbar */
-
-.sidenav{
-    height:100%;
+.sidenav {
+    height: 100%;
     width: 200px;
     position: fixed;
     z-index: 1;
@@ -53,17 +41,36 @@ h1{
     color: #05386B;
     display: block;
     font-weight: bold;
-  }
+}
 
-  /* When you mouse over the navigation links, change their color */
+/* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
     color: #f1f1f1;
-  }
+}
 
-  .main {
+.main {
     margin-left: 160px; /* Same as the width of the sidebar */
     padding: 0px 10px;
-  }
+}
+
+/* Move the "Garden" title higher */
+.main h1 {
+    margin-top: 5px; /* Adjust the margin as needed */
+    color: white; /* Set font color to white */
+}
+
+.watercan {
+    left: 580px; /* Adjust the horizontal position as needed */
+    width: 200px; /* Set the desired width for the watering can */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+.main h1 {
+    margin-top: 5px; /* Adjust the margin as needed */
+    color:#05386B; /* Set font color to white */
+}
+
 
 
 #points {
