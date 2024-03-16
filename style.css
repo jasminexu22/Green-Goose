@@ -64,3 +64,10 @@ h1{
     margin-left: 160px; /* Same as the width of the sidebar */
     padding: 0px 10px;
   }
+
+
+#points {
+    text-align: center;
+    color: black;
+    font-size: larger;
+}
