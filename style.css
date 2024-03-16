@@ -1,4 +1,3 @@
-
 html {
     box-sizing: border-box;
     font-size: 100%
@@ -36,13 +35,14 @@ h1{
 
 .sidenav{
     height:100%;
+    /* width: 200px; */
     width: 200px;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
     background-color: #5CDB95;
-    overflow: hidden;
+    /* overflow: hidden; */
     padding-top: 20px;
 }
 
@@ -64,3 +64,10 @@ h1{
     margin-left: 160px; /* Same as the width of the sidebar */
     padding: 0px 10px;
   }
+
+#points {
+    text-align: center;
+    color: black;
+    font-size: larger;
+}
+
